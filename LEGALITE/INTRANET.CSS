@@ -1,0 +1,66 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #727272;
+}
+section{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center
+    }
+h1{
+    margin-block: 10px;
+    font-size: larger;
+}
+.centrar{
+    margin: 25px auto;
+    width: 35%;
+}
+.logo{
+    margin: auto;
+    border: 1px solid rgb(247, 1, 1);
+    border-radius: 10px;
+    width: 360px;
+}
+.credencial{
+    color: rgb(0, 0, 0);
+    background-color: rgb(209, 209, 209);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border-radius: 10px;
+    width: 80%;
+    box-sizing: border-box;
+
+}
+.centro{
+    background-color: rgb(68, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(156, 25, 25);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.boton{
+    background-color: rgb(185, 19, 0);
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 80%;
+
+}
+.boton:hover{
+    background: rgb(83, 0, 0);
+}
+.flex{
+    flex-wrap: wrap;
+}
+@media (max-width: 1070px){
+.columna{
+        width: 45%;
+    }
+}
