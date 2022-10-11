@@ -94,3 +94,40 @@ a {
     left: 0;
   }
 }
+H1 {
+  text-align: center;
+  text-decoration: dotted;
+  width: 100%;
+  margin: 5px auto;
+}
+
+#main-table {
+  margin: 150px auto;
+  width: auto;
+}
+table {
+  background-color: white;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+th {
+  border: solid 1px;
+  padding: 15px;
+}
+
+td {
+  border: solid 1px;
+  padding: 10px;
+}
+.CRUD {
+  border: solid 1px;
+  padding: 10px;
+}
+button {
+  padding: 2px;
+  margin: 5px;
+}
+.ICONOS {
+  width: 25px;
+}
