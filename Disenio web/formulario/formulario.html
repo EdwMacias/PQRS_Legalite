@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleform.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Formulario INTRANET</title>
+  </head>
+  <body>
+    <header>
+      <!-- inicio de menu principal con ocpion de menu desplegable activo y conectado a  scriptform.js-->
+      <nav class="navegacion">
+        <!-- navbar -->
+        <a href="#" class="branding">Formulario</a>
+        <!-- navbranding -->
+        <ul class="menu">
+          <!-- navmenu -->
+          <li class="item">
+            <!-- navitem -->
+            <a href="#" class="link">Inicio</a>
+          </li>
+          <li class="item">
+            <a href="#" class="link">Mi perfil</a>
+          </li>
+          <li class="item">
+            <a href="#" class="link">Crear solicitud</a>
+          </li>
+          <li class="item">
+            <a href="#" class="link">Contacta soporte</a>
+          </li>
+        </ul>
+        <div class="menu_desplegable">
+          <!-- hamburguer -->
+          <span class="barra"></span
+          ><!-- bar -->
+          <span class="barra"></span>
+          <span class="barra"></span>
+        </div>
+        <script src="scriptform.js"></script>
+      </nav>
+    </header>
+    <h2>Bienvenido, por favor diligencie las siguientes preguntas:</h2>
+    <form
+      autocomplete="on"
+      class="formulario"
+      action="/my-handling-form-page"
+      method="post"
+    >
+      <span></span>
+      <div class="txt_field">
+        <input type="name" required />
+        <span></span>
+        <label
+          >Digite su documento de identidad o NIT sin digito de
+          verificacion</label
+        >
+        <span></span>
+      </div>
+      <span></span>
+      <div class="txt_field">
+        <input type="mail" required />
+        <span></span>
+        <label>suministre su correo electronico</label>
+        <span></span>
+      </div>
+      <span></span>
+      <div class="txt_field">
+        <input type="textarea" required />
+        <span></span>
+        <label>Escriba su peticion, queja o recurso</label>
+        <span></span>
+      </div>
+      <div>
+        <input class="botonsito" type="submit" />
+        <!-- el boton quiero dejarlo a la derecha-->
+        <span></span>
+      </div>
+      <!-- Si funciona asi? o debo hacerlo de diferente manera para dejar el input declarado como esta en los comments?-->
+      <!-- <label for="name">Nombre:</label>
+      <input autofocus type="text" id="name" name="user_name" /> 
+      <ul>
+        <li id="email">
+          <label for="mail">Correo electrónico:</label>
+          <input type="email" id="mail" name="user_mail" />
+        </li>
+        <li id="formulario">
+          <label for="msg"
+            >Diligencie en este recuadro su peticion, queja o recurso:</label
+          >
+          <textarea cols="50" id="msg" name="user_message"></textarea>
+        </li>
+      </ul>
+      <input type="submit" /> -->
+    </form>
+  </body>
+</html>

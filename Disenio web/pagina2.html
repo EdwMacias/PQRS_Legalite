@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="pagina2.css" />
-    <link rel="stylesheet" href="script.js" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap"
       rel="stylesheet"
     />
-    <title>menu desplegable</title>
+    <!-- CSS only -->
+
+    <title>Tabla de PQRS</title>
     <!-- Crear PQRS modelo de formulario en ANGULAR (VER CURSO), CREAR INICIO, CREAR PETICIÓN, LOGOUT, tabla de datos, 
           como consumir un servicio de backend -->
   </head>
@@ -51,18 +52,38 @@
     <h1>INTRANET</h1>
     <hr />
     <p><b>Bienvenido a GRUPO LEGALITE S.A.S. </b></p>
+    <style>
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      th,
+      td {
+        padding: 10px 20px;
+        border: 1px solid #000;
+      }
+    </style>
+    <script src="script.js"></script>
     <table id="main-table">
-      <thead>
+      <!-- tabla dinamica para este recuadro en JS (averiguar con datos doomies) 
+      iNVESTIGAR QUE INFORMACION SE NECESITA EN LA PQRS, QUE DATOS DEBO PEDIR Y QUE DATOS TENEMOS INTERNOS.
+    HACER LA INTERFAZ DE CLIENTE CON FORMULARIO, REVISAR COMO RECORRER LO ENVIADO EN BACKEND PARA PODER SUBIRLO COMO SUPERUSUARIO Y A ASESOR.
+    agregar tambien el click para terminado
+    agregar devolucion en backend 
+    CREAR OPCION DE CREAR CLIENTE, BORRAR CLIENTE, EDITAR CLIENTE Y CREAR ASESOR, ELIMINAR ASESOR COMO PESTANIA DE ADMINISTRADOR. 
+        <thead>
         <tr>
+          <th id="bucle">id </th> 
           <th>descripcion</th>
           <th>Asesor</th>
           <th>fecha ingreso</th>
-          <th>fecha de revision</th>
+          <th>fecha de revisión</th>
           <th>fecha de entrega</th>
           <th>Crear leer actualizar borrar</th>
-          <tr><td>get</td><td>get</td><td>get</td><td>get</td><td>get</td><TD class="CRUD"><button><img class="ICONOS" src="writing.png" alt="CREAR"></button><button><img class="ICONOS" src="gramatica.png" alt="LEER"></button><BUtton><img class="ICONOS" src="recargar.png" alt="REFRESCAR"></button><BUtton><img class="ICONOS" src="borrar.png" alt="Eliminar"></button></TD></tr>
-        </tr>
-      </thead>
+          <tr><td>get</td><td>get</td><td>get</td><td>get</td><td>get</td><td>get</td><TD class="CRUD"><button><img class="ICONOS" src="writing.png" alt="CREAR"></button><button><img class="ICONOS" src="gramatica.png" alt="LEER"></button><BUtton><img class="ICONOS" src="recargar.png" alt="REFRESCAR"></button><BUtton><img class="ICONOS" src="borrar.png" alt="Eliminar"></button></TD></tr>
+        </tr> 
+      </thead>-->
     </table>
   </body>
 </html>
+<!--como consultar un endpoint mas adelante, ver curso de spring boot-->
