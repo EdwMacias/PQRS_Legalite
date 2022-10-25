@@ -1,0 +1,17 @@
+[
+  {
+    "asunto": "Peticion",
+    "cliente": "Pintusuelas",
+    "descripcion": "RUT 2022"
+  },
+  {
+    "asunto": "Peticion",
+    "cliente": "sufi",
+    "descripcion": "Declaracion de renta 2020"
+  },
+  {
+    "asunto": "Peticion",
+    "cliente": "Bancolombia",
+    "descripcion": "Declaracion de robos 2005"
+  }
+]

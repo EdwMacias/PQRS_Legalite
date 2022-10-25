@@ -52,19 +52,37 @@
     <h1>INTRANET</h1>
     <hr />
     <p><b>Bienvenido a GRUPO LEGALITE S.A.S. </b></p>
-    <style>
-      table {
-        border-collapse: collapse;
-        border-spacing: 0;
-      }
-      th,
-      td {
-        padding: 10px 20px;
-        border: 1px solid #000;
-      }
-    </style>
+
     <script src="script.js"></script>
-    <table id="main-table">
+    <table id="main-table table-dark table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Cliente</th>
+            <th scope="col">Asunto</th>
+            <th scope="col">Descripcion</th>
+            <th scope="col">CRUD</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
       <!-- tabla dinamica para este recuadro en JS (averiguar con datos doomies) 
       iNVESTIGAR QUE INFORMACION SE NECESITA EN LA PQRS, QUE DATOS DEBO PEDIR Y QUE DATOS TENEMOS INTERNOS.
     HACER LA INTERFAZ DE CLIENTE CON FORMULARIO, REVISAR COMO RECORRER LO ENVIADO EN BACKEND PARA PODER SUBIRLO COMO SUPERUSUARIO Y A ASESOR.

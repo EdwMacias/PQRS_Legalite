@@ -12,3 +12,11 @@ document.querySelectorAll(".link").forEach((n) =>
     navMenu.classList.remove("active");
   })
 );
+
+console.log("activo");
+document.querySelector("#botonsito").addEventListener("submit", traerDatos);
+
+function traerDatos() {
+  console.log("hola");
+}
+console.log(typeof traerDatos);

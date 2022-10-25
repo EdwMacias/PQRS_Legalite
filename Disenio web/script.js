@@ -1,10 +1,33 @@
+const pqrs = `[
+  {
+    "asunto": "Peticion",
+    "cliente": "Pintusuelas",
+    "descripcion": "RUT 2022"
+  },
+  {
+    "asunto": "Peticion",
+    "cliente": "sufi",
+    "descripcion": "Declaracion de renta 2020"
+  },
+  {
+    "asunto": "Queja",
+    "cliente": "Bancolombia",
+    "descripcion": "Declaracion de robos 2005"
+  }
+]`;
+
+// const JsonData = JSON.parse(pqrs);
+// console.log(JsonData);
+
+// const Peticion = JsonData.filter((JsonData) => "peticion");
+
 const menudesplegable = document.querySelector(".menu_desplegable");
 const navMenu = document.querySelector(".menu");
 
 menudesplegable.addEventListener("click", () => {
   menudesplegable.classList.toggle("active");
   navMenu.classList.toggle("active");
-});
+}); //menu desplegable
 
 document.querySelectorAll(".link").forEach((n) =>
   n.addEventListener("click", () => {
@@ -12,52 +35,3 @@ document.querySelectorAll(".link").forEach((n) =>
     navMenu.classList.remove("active");
   })
 );
-
-let table = document.createElement("table");
-let thead = document.createElement("thead");
-let tbody = document.createElement("tbody");
-
-table.appendChild(thead);
-table.appendChild(tbody);
-
-// Creating and adding data to first row of the table
-let row_1 = document.createElement("tr");
-let heading_1 = document.createElement("th");
-heading_1.innerHTML = "Sr. No.";
-let heading_2 = document.createElement("th");
-heading_2.innerHTML = "Name";
-let heading_3 = document.createElement("th");
-heading_3.innerHTML = "Company";
-
-row_1.appendChild(heading_1);
-row_1.appendChild(heading_2);
-row_1.appendChild(heading_3);
-thead.appendChild(row_1);
-
-// Creating and adding data to second row of the table
-let row_2 = document.createElement("tr");
-let row_2_data_1 = document.createElement("td");
-row_2_data_1.innerHTML = "1.";
-let row_2_data_2 = document.createElement("td");
-row_2_data_2.innerHTML = "James Clerk";
-let row_2_data_3 = document.createElement("td");
-row_2_data_3.innerHTML = "Netflix";
-
-row_2.appendChild(row_2_data_1);
-row_2.appendChild(row_2_data_2);
-row_2.appendChild(row_2_data_3);
-tbody.appendChild(row_2);
-
-// Creating and adding data to third row of the table
-let row_3 = document.createElement("tr");
-let row_3_data_1 = document.createElement("td");
-row_3_data_1.innerHTML = "2.";
-let row_3_data_2 = document.createElement("td");
-row_3_data_2.innerHTML = "Adam White";
-let row_3_data_3 = document.createElement("td");
-row_3_data_3.innerHTML = "Microsoft";
-
-row_3.appendChild(row_3_data_1);
-row_3.appendChild(row_3_data_2);
-row_3.appendChild(row_3_data_3);
-tbody.appendChild(row_3);
