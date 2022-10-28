@@ -44,6 +44,7 @@
           <span class="barra"></span>
         </div>
         <script src="scriptform.js"></script>
+        <!-- El script se llama en la instancia del body para que se active, de lo contrario, si se pone en el head no funciona -->
       </nav>
     </header>
     <h2>Bienvenido, por favor diligencie las siguientes preguntas:</h2>
@@ -51,7 +52,7 @@
       autocomplete="on"
       class="formulario"
       action="/my-handling-form-page"
-      method="post"
+      method="get"
     >
       <span></span>
       <div class="txt_field">
@@ -65,6 +66,7 @@
       </div>
       <span></span>
       <div class="txt_field">
+        <!-- el modulo txt_field tiene agregadas las animaciones para poder verse muy intuitivo y didactico-->
         <input type="mail" required />
         <span></span>
         <label>suministre su correo electronico</label>
@@ -99,5 +101,6 @@
       </ul>
       <input type="submit" /> -->
     </form>
+    <!-- Aqui agrego la prueba de que funciona el JS con un metodo get y set puesto en scriptform.js -->
   </body>
 </html>
